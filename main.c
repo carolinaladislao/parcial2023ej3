@@ -3,7 +3,7 @@
 #include "hash.h"
 int main() {
 
-    TablaHashing * tabla = malloc(sizeof (tabla));
+    TablaHashing * tabla = malloc(sizeof (TablaHashing));
 
     for (int i = 0; i < TAM; i++){
         tabla->tabla[i] = NULL;
@@ -24,7 +24,7 @@ int main() {
 
     redispersionLineal(tabla, "Carolina", hash("Carolina"));
 
-    existe(tabla,"Carolina");
+    int pos = existe(tabla,"n");
 
 
     return 0;

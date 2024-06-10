@@ -15,6 +15,6 @@ void redispersionLineal(TablaHashing * tabla, char * entrada, int posicion);
 
 int existe(TablaHashing * tabla, char * entrada);
 
-int hash(char * nombre);
+int hash(const char * nombre);
 
 #endif //EJERCICIO3_HASH_H
